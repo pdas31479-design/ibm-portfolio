@@ -1,0 +1,40 @@
+function addRecommendation() {
+
+    let recommendation = document.getElementById("new_recommendation");
+
+    if (recommendation.value.trim() != "") {
+
+        let recommendations = document.getElementById("all_recommendations");
+
+        let element = document.createElement("div");
+
+        element.className = "recommendation";
+
+        let name = document.getElementById("name").value;
+
+        if(name.trim() != ""){
+            element.innerHTML = "<strong>" + name + ":</strong> " + recommendation.value;
+        }else{
+            element.innerHTML = recommendation.value;
+        }
+
+        recommendations.appendChild(element);
+
+        recommendation.value = "";
+        document.getElementById("name").value = "";
+
+        showPopup(true);
+    }
+}
+
+function showPopup(show) {
+
+    let popup = document.getElementById("popup");
+
+    if(show){
+        popup.style.visibility = "visible";
+    }
+    else{
+        popup.style.visibility = "hidden";
+    }
+}
