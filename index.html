@@ -1,1 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pritam Das | Portfolio</title>
 
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<script defer src="script.js"></script>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<h2>Pritam Das</h2>
+<p>Full Stack Developer</p>
+</div>
+
+<nav>
+
+<a href="#about">About Me</a>
+
+<a href="#projects">Project Details</a>
+
+<a href="#skills">Skills</a>
+
+<a href="#recommendations">Recommendations</a>
+
+<a href="#recommendation-form">Add Recommendation</a>
+
+</nav>
+
+<a href="#top" class="home">
+<i class="fas fa-house"></i>
+</a>
+
+</header>
+
+<section id="about">
+
+<div class="about-text">
+
+<h1>About Me</h1>
+
+<p>
+
+Hello! I am <b>Pritam Das</b>, a BCA student from Manipal University Jaipur.
+
+I enjoy creating modern websites using HTML, CSS and JavaScript.
+
+I am passionate about Full Stack Web Development and continuously improving my programming skills.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h1>Skills</h1>
+
+<div class="skill-box">
+
+<div class="skill">
+<img src="https://cdn-icons-png.flaticon.com/512/732/732212.png">
+<h3>HTML</h3>
+<p>2 Years Experience</p>
+</div>
+
+<div class="skill">
+<img src="https://cdn-icons-png.flaticon.com/512/732/732190.png">
+<h3>CSS</h3>
+<p>2 Years Experience</p>
+</div>
+
+<div class="skill">
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png">
+<h3>JavaScript</h3>
+<p>1 Year Experience</p>
+</div>
+
+<div class="skill">
+<img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png">
+<h3>React</h3>
+<p>Learning</p>
+</div>
+
+<div class="skill">
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968322.png">
+<h3>Node.js</h3>
+<p>Learning</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h1>Project Details</h1>
+
+<div class="project">
+
+<h3>Portfolio Website</h3>
+
+<p>
+Designed a responsive portfolio using HTML, CSS and JavaScript.
+</p>
+
+</div>
+
+<div class="project">
+
+<h3>Shopping Website</h3>
+
+<p>
+Built an e-commerce website with product pages and cart functionality.
+</p>
+
+</div>
+
+<div class="project">
+
+<h3>Student Management System</h3>
+
+<p>
+Created a CRUD application using JavaScript.
+</p>
+
+</div>
+
+</section>
+
+<section id="recommendations">
+
+<h1>Recommendations</h1>
+
+<div id="all_recommendations">
+
+<div class="recommendation">
+
+"Pritam is a hardworking student with excellent coding skills."
+
+</div>
+
+<div class="recommendation">
+
+"Great team player and quick learner."
+
+</div>
+
+<div class="recommendation">
+
+"Excellent Full Stack Developer with strong problem-solving ability."
+
+</div>
+
+</div>
+
+</section>
+
+<section id="recommendation-form">
+
+<h1>Add Recommendation</h1>
+
+<input
+type="text"
+placeholder="Your Name"
+id="name">
+
+<textarea
+id="new_recommendation"
+placeholder="Write Recommendation">
+</textarea>
+
+<button onclick="addRecommendation()">
+
+Submit
+
+</button>
+
+</section>
+
+<div id="popup" class="popup">
+
+<h2>Thank You!</h2>
+
+<p>Your recommendation has been added.</p>
+
+<button onclick="showPopup(false)">
+
+OK
+
+</button>
+
+</div>
+
+</body>
+</html>
